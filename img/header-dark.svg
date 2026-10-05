@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="100%">
+  <defs>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 80px; font-weight: 800; letter-spacing: -3px; fill: #f0f6fc; }
+      .subtitle { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 26px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; fill: #8b949e; }
+    </style>
+  </defs>
+
+  <!-- Fondo oscuro -->
+  <rect width="1200" height="350" fill="#0d1117" />
+
+  <!-- Rejilla de fondo sutil -->
+  <g stroke="#21262d" stroke-width="1" opacity="0.6">
+    <path d="M0 100 L1200 100 M0 200 L1200 200 M0 300 L1200 300" />
+    <path d="M200 0 L200 350 M400 0 L400 350 M600 0 L600 350 M800 0 L800 350 M1000 0 L1000 350" />
+  </g>
+
+  <!-- Gráfico abstracto industrial / circuito (Lado derecho) -->
+  <g stroke="#58a6ff" stroke-width="3" fill="none" opacity="0.85">
+    <!-- Hexágono principal -->
+    <polygon points="950,175 1020,135 1020,55 950,15 880,55 880,135" />
+    <!-- Hexágono interior -->
+    <polygon points="950,175 990,152 990,102 950,80 910,102 910,152" stroke-width="2" />
+    <!-- Nodos de conexión -->
+    <circle cx="950" cy="15" r="6" fill="#58a6ff" stroke="none" />
+    <circle cx="1020" cy="55" r="6" fill="#58a6ff" stroke="none" />
+    <circle cx="1020" cy="135" r="6" fill="#58a6ff" stroke="none" />
+    <circle cx="950" cy="175" r="6" fill="#58a6ff" stroke="none" />
+    <circle cx="880" cy="135" r="6" fill="#58a6ff" stroke="none" />
+    <circle cx="880" cy="55" r="6" fill="#58a6ff" stroke="none" />
+    
+    <!-- Líneas de extensión -->
+    <line x1="880" y1="95" x2="750" y2="95" stroke-dasharray="6,6" />
+    <line x1="1020" y1="95" x2="1150" y2="95" stroke-dasharray="6,6" />
+    <line x1="950" y1="175" x2="950" y2="280" stroke-dasharray="6,6" />
+  </g>
+
+  <!-- Texto -->
+  <text x="80" y="160" class="title">Plan B</text>
+  <text x="84" y="220" class="subtitle">Automatización &amp; Robótica</text>
+  
+  <!-- Línea decorativa bajo el subtítulo -->
+  <line x1="80" y1="260" x2="220" y2="260" stroke="#58a6ff" stroke-width="5" stroke-linecap="round" />
+</svg>
